@@ -4,7 +4,7 @@
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    font-style: 1.2rem;
 }
 
 * {
@@ -85,10 +85,34 @@
     display: none;
 }
 
+/* bannar section */
+.banner{
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.bannar-txt h1{
+    font-weight: bold;
+    font-size: 3.2rem;
+    padding-bottom: 20px;
+}
+.span-1{
+    color: orange;
+}
+.span-2{
+    color: rgb(34, 184, 244);
+}
 
-
-
-
+.bannar-txt button{
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
 
 
 
@@ -119,8 +143,20 @@
     border-bottom: 1px solid orange;
     margin: 0%;
 }
-
-
+.banner{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column-reverse;
+}
+.bannar-img{
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+    gap: 0;
+}
+.bannar-txt{
+    text-align: center;
+}
 
 
 
