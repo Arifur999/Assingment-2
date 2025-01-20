@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* shared-box */
+.display-flex {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+
+
+/* nav section */
+.navber {
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+.nav-head{
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.home{
+    padding-right: 30px;
+    color: orange;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.about{
+    padding-right: 30px;
+    color: skyblue;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.Facilities{
+    padding-right: 30px;
+    color: rgb(30, 66, 68);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.Admission{
+    padding-right: 30px;
+    color: rgba(93, 88, 239, 1);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.prim-btn{
+    background-color: orange;
+    padding: 10px 50px;
+    color: white;
+    border: 0;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.icone{
+    width: 100px;
+}
+.bar{
+    border: 2px solid black;
+    width: 30px;
+}
+.all-bar{
+    flex-direction: column;
+    gap: 3px;
+    border: 1px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile phone */
+
+@media screen and (max-width:576px) {
+.nav-btn, .prim-btn, .nav-head h1{
+    display: none;
+}
+.all-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navber{
+    justify-content:space-between;
+    padding: 20px;
+    border-bottom: 1px solid orange;
+    margin: 0%;
+}
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
