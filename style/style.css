@@ -16,6 +16,10 @@
     text-decoration: none;
     list-style: none;
 }
+* h3{
+    font-weight: bold;
+    
+}
 
 /* shared-box */
 .display-flex {
@@ -165,7 +169,8 @@
     border-radius: 20px;
 }
 
-.contrainer {
+.contrainer,
+.story {
     background-image: url("../assets/bg.png");
     margin: 30px auto;
     text-align: center;
@@ -178,48 +183,56 @@
     width: 136px;
     height: 136px;
 }
-.box-header{
+
+.box-header {
     font-weight: bold;
     font-size: 2.4rem;
     margin: 20px 0px;
 }
-.box1 h4{
+
+.box1 h4 {
     font-weight: bold;
     font-size: 1.7rem;
     margin: 18px 0px;
 
 
 }
- .box2 h4{
+
+.box2 h4 {
     font-weight: bold;
     font-size: 1.7rem;
     margin: 18px 0px;
 
 
- } 
- .box3 h4{
+}
+
+.box3 h4 {
     font-weight: bold;
     font-size: 1.7rem;
     margin: 18px 0px;
 }
-.rdm1{
+
+.rdm1 {
     color: rgba(100, 200, 255, 1);
     margin-top: 20px;
     cursor: pointer;
 }
-.rdm2{
+
+.rdm2 {
     color: rgb(156, 181, 33);
     margin-top: 20px;
     cursor: pointer;
 
 }
-.rdm3{
+
+.rdm3 {
     color: rgb(255, 100, 196);
     gap: 20px;
     cursor: pointer;
 
 }
-#icon{
+
+#icon {
     background-color: orange;
     color: white;
     width: 45px;
@@ -227,7 +240,8 @@
     border-radius: 50%;
     padding-top: 17px;
 }
-#icone1{
+
+#icone1 {
     background-color: orange;
     color: white;
     width: 45px;
@@ -235,12 +249,151 @@
     border-radius: 50%;
     padding-top: 17px;
 }
-.arrow{
+
+.arrow {
     justify-content: center;
     gap: 20px;
     text-align: center;
     cursor: pointer;
 }
+
+/* story box section */
+
+.main-box {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(254, 161, 1, 0.442));
+
+}
+
+.story {
+    max-width: 90%;
+    margin: 0 auto;
+    /* box-shadow: 0 0 28px rgba(0, 0, 0, 0.05); */
+
+    background-color: ;
+}
+
+.story-all-box {
+    text-align: start;
+}
+
+.story-box1 {
+    max-width: 540px;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+
+
+
+.story-box1 img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.sort-box img {
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.sort-box {
+    gap: 0;
+}
+
+.story-box2,
+.story-box3,
+.story-box4,
+.story-box5 {
+    max-width: 290px;
+    background-color: white;
+    border-radius: 20px;
+}
+.story-box1 h3{
+    padding: 30px 0px 30px 20px;
+
+}
+.story-box2 h3{
+    padding: 30px 0px 30px 20px;
+
+}
+.story-box3 h3{
+    padding: 30px 0px 30px 20px;
+
+}
+.story-box4 h3{
+    padding: 30px 0px 30px 20px;
+
+}
+.story-box5 h3, p{
+    padding: 30px 0px 0px 20px;
+}
+.story-box5 p{
+    padding: 0px 20px;
+}
+
+
+.big-box {
+    flex-direction: column;
+}
+
+.sort-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-btn1{
+    background-color: rgba(60, 216, 232, 1);
+    color: white;
+    padding: 10px 5px;
+    border: 0;
+    border-radius: 20px;
+    /* position: absolute; */
+    /* margin-top: -20px; */
+    margin-top: -20px;
+    margin-left: 20px;
+
+
+}
+.story-btn2, .story-btn3, .story-btn4, .story-btn5{
+    color: white;
+    background-color: rgba(29, 45, 222, 0.838);
+
+    padding: 10px 5px;
+    border: 0;
+    border-radius: 20px;
+    position:absolute;
+    margin-left: 20px;
+    margin-top: -20px;
+
+}
+.story-btn2{
+    background-color: rgb(29, 222, 96);
+
+}
+.story-btn4{
+    background-color: rgba(156, 19, 198, 0.944);
+
+}
+.story h1{
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin: 40px 0;
+}
+.last-btn{
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    margin: 40px 0px;
+    cursor: pointer;
+
+}
+
+
+
 
 
 
@@ -311,15 +464,41 @@
         margin: 0 auto;
     }
 
-    .all-box{
-        width:fit-content;
+    .all-box {
+        width: fit-content;
     }
-    .arrow{
+
+    .arrow {
         display: none;
     }
-    
+.big-box{
+    display: none;
+}
+.sort-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+}
+/* .sort-box{
+    width: 100%;
+} */
+ .main-box{
+    width: 100%;
+ }
+.sort-box{
+    width: 100%;
+}
+.story-btn2, .story-btn3, .story-btn4, .story-btn5{
+    width: 60%;
+    position: relative;
+    padding: 0;
 
-
-
+}
+.story-box2, .story-box3, .story-box4, .story-box5{
+    width: 100%;
+}
+.sort-box img{
+    width: 100%;
+}
 
 }
